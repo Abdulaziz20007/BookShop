@@ -1,0 +1,1737 @@
+2025-01-13T08:17:13.880Z error: uncaughtException: re is not defined
+ReferenceError: re is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:16.790Z error: uncaughtException: reque is not defined
+ReferenceError: reque is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:10:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:18.445Z error: uncaughtException: Cannot access 'app' before initialization
+ReferenceError: Cannot access 'app' before initialization
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:10:16)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:22.837Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:27.797Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:29.737Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:32.940Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:48.621Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:50.120Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:51.318Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:17:57.215Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:13:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:18:49.209Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:19:04.045Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:19:13.111Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:19:46.534Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:19:48.364Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:20:02.622Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:20:04.438Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:20:23.271Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:02.970Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:22.641Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:22.641Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:31.528Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:31.527Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:34.631Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:34.645Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:41.874Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:41.874Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:17:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:56.591Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:56.593Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:59.310Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:21:59.310Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:01.687Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:01.686Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:04.469Z error: uncaughtException: next is not a function
+TypeError: next is not a function
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:238:9
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:04.469Z error: uncaughtException: next is not a function
+TypeError: next is not a function
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:238:9
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:13.146Z error: uncaughtException: listen EADDRINUSE: address already in use :::3030
+Error: listen EADDRINUSE: address already in use :::3030
+    at Server.setupListenHandle [as _listen2] (node:net:1907:16)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2066:7)
+    at Function.listen (C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express\lib\application.js:635:24)
+    at start (C:\Users\Abdulaziz\Desktop\BookShop\app.js:26:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-01-13T08:22:36.670Z error: uncaughtException: listen EADDRINUSE: address already in use :::3030
+Error: listen EADDRINUSE: address already in use :::3030
+    at Server.setupListenHandle [as _listen2] (node:net:1907:16)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2066:7)
+    at Function.listen (C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express\lib\application.js:635:24)
+    at start (C:\Users\Abdulaziz\Desktop\BookShop\app.js:26:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-01-13T08:22:37.366Z error: uncaughtException: listen EADDRINUSE: address already in use :::3030
+Error: listen EADDRINUSE: address already in use :::3030
+    at Server.setupListenHandle [as _listen2] (node:net:1907:16)
+    at listenInCluster (node:net:1964:12)
+    at Server.listen (node:net:2066:7)
+    at Function.listen (C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express\lib\application.js:635:24)
+    at start (C:\Users\Abdulaziz\Desktop\BookShop\app.js:26:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2025-01-13T08:22:40.518Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:40.521Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:41.978Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:41.979Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:43.902Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:22:43.903Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:23:04.559Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:24:48.201Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:6
+    console.log();
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:24:48.200Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:6
+    console.log();
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:24:50.365Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:6
+    console.log("A");
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:24:50.365Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:6
+    console.log("A");
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:24:56.926Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:5
+  console.log("A");
+         ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:24:56.926Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:5
+  console.log("A");
+         ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:24:58.646Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:6
+    console.log("A");
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:24:58.646Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:6
+    console.log("A");
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:24:59.955Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:7
+    console.log("A");
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:24:59.955Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:7
+    console.log("A");
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:02.405Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:8
+    console.log("A");
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:02.405Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:8
+    console.log("A");
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:06.863Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:8
+    console.log("A")
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:06.863Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:8
+    console.log("A")
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:07.983Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:8
+    console.log("A"),
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:07.983Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:8
+    console.log("A"),
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:09.702Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:8
+    console.log("A")
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:09.709Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:8
+    console.log("A")
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:10.891Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:7
+    console.log("A")
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:10.891Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:7
+    console.log("A")
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:13.138Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:7
+    console.log("A"),
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:13.138Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:7
+    console.log("A"),
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:17.157Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:7
+    console.log("A")
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:17.157Z error: uncaughtException: Unexpected token '.'
+C:\Users\Abdulaziz\Desktop\BookShop\helpers\express_winston.js:7
+    console.log("A")
+           ^
+
+SyntaxError: Unexpected token '.'
+    at wrapSafe (node:internal/modules/cjs/loader:1469:18)
+    at Module._compile (node:internal/modules/cjs/loader:1491:20)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:6:42)
+2025-01-13T08:25:24.179Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T08:25:24.179Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T16:51:54.900Z error: uncaughtException: next is not a function
+TypeError: next is not a function
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:238:9
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T16:51:55.441Z error: uncaughtException: next is not a function
+TypeError: next is not a function
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:238:9
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T16:52:09.324Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T16:52:16.104Z error: uncaughtException: Cannot read properties of undefined (reading 'end')
+TypeError: Cannot read properties of undefined (reading 'end')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:312:23
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T16:52:25.203Z error: uncaughtException: Cannot read properties of undefined (reading 'originalUrl')
+TypeError: Cannot read properties of undefined (reading 'originalUrl')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:295:30
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T16:53:46.082Z error: uncaughtException: Cannot read properties of undefined (reading 'originalUrl')
+TypeError: Cannot read properties of undefined (reading 'originalUrl')
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:295:30
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:16:9)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T16:53:58.340Z error: uncaughtException: next is not a function
+TypeError: next is not a function
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:238:9
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T16:53:59.359Z error: uncaughtException: next is not a function
+TypeError: next is not a function
+    at C:\Users\Abdulaziz\Desktop\BookShop\node_modules\express-winston\index.js:238:9
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:19:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at node:internal/main/run_main_module:36:49
+2025-01-13T17:17:09.291Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:17:13.879Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:17:27.322Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:17:40.684Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:17:42.453Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:17:43.621Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:17:45.815Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:17:47.234Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:18:00.372Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:18:01.583Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:18:07.380Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:4:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:18:10.803Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:18:24.846Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:18:30.428Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:18:46.763Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:18:57.537Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:18:59.217Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:02.511Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:03.671Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:04.692Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:06.850Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:09.157Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:10.933Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:12.859Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:14.211Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:17.944Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:33.401Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:35.235Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:39.773Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:42.373Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:47.819Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:50.395Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:52.698Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:55.637Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:19:58.942Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:02.153Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:14.825Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:17.351Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:18.480Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:22.136Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:29.267Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:31.630Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:41.783Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:49.869Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:51.457Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:54.793Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:20:56.741Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:21:45.602Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:21:50.092Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:21:54.399Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:21:55.509Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:22:04.933Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:22:06.188Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:22:19.374Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:22:23.139Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:22:31.670Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:22:34.700Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)
+2025-01-13T17:22:39.199Z error: uncaughtException: adminRoutes is not defined
+ReferenceError: adminRoutes is not defined
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\routes\index.routes.js:3:22)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (C:\Users\Abdulaziz\Desktop\BookShop\app.js:14:20)

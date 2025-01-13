@@ -1,0 +1,8 @@
+{
+  "port": 3030,
+  "db_host": "localhost",
+  "db_usermame": "postgres",
+  "db_port": 5432,
+  "db_password": "rooot",
+  "db_name": "bookshop"
+}

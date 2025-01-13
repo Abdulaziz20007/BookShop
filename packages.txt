@@ -1,0 +1,1 @@
+npm i express config pg sequelize cookie-parser jsonwebtoken bcrypt nodemailer winston express-winston uuid
