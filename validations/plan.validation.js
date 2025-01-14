@@ -1,16 +1,10 @@
 const Joi = require("joi");
 
-const createPlan = Joi.object({
-  month: Joi.number().integer().required(),
-  percent: Joi.number().precision(2).required(),
-});
+exports.planValidation = (data) => {
+  const planSchema = Joi.object({
+    month: Joi.number().required(),
+    percent: Joi.number().precision(2).required(),
+  });
 
-const updatePlan = Joi.object({
-  month: Joi.number().integer(),
-  percent: Joi.number().precision(2),
-});
-
-module.exports = {
-  createPlan,
-  updatePlan,
+  return planSchema.validate(data, { abortEarly: false });
 };

@@ -27,6 +27,10 @@ const Ban = sequelize.define(
       type: DataTypes.STRING,
       defaultValue: "",
     },
+    reason: {
+      type: DataTypes.STRING,
+      defaultValue: "",
+    },
   },
   {
     timestamps: true,

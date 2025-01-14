@@ -1,18 +1,11 @@
 const Joi = require("joi");
 
-const createCategory = Joi.object({
-  parent_category_id: Joi.number().integer().allow(null),
-  name: Joi.string().required(),
-  description: Joi.string().allow(""),
-});
+exports.categoryValidation = (data) => {
+  const categorySchema = Joi.object({
+    parent_category_id: Joi.number().allow(null),
+    name: Joi.string().required(),
+    description: Joi.string().allow(""),
+  });
 
-const updateCategory = Joi.object({
-  parent_category_id: Joi.number().integer().allow(null),
-  name: Joi.string(),
-  description: Joi.string().allow(""),
-});
-
-module.exports = {
-  createCategory,
-  updateCategory,
+  return categorySchema.validate(data, { abortEarly: false });
 };

@@ -1,24 +1,13 @@
 const Joi = require("joi");
 
-const createAdmin = Joi.object({
-  name: Joi.string().required(),
-  surname: Joi.string(),
-  email: Joi.string().email().required(),
-  phone: Joi.string(),
-  password: Joi.string().required().min(6),
-  refresh_token: Joi.string().allow(""),
-});
+exports.adminValidation = (data) => {
+  const adminSchema = Joi.object({
+    name: Joi.string().min(2).max(50).required(),
+    surname: Joi.string().min(2).max(50).optional(),
+    email: Joi.string().email().required(),
+    phone: Joi.string().max(15),
+    password: Joi.string().min(6).required(),
+  });
 
-const updateAdmin = Joi.object({
-  name: Joi.string(),
-  surname: Joi.string(),
-  email: Joi.string().email(),
-  phone: Joi.string(),
-  password: Joi.string().min(6),
-  refresh_token: Joi.string().allow(""),
-});
-
-module.exports = {
-  createAdmin,
-  updateAdmin,
+  return adminSchema.validate(data, { abortEarly: false });
 };

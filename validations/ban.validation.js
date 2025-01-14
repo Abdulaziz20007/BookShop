@@ -1,17 +1,13 @@
 const Joi = require("joi");
 
-const createBan = Joi.object({
-  admin_id: Joi.number().integer().required(),
-  user_id: Joi.number().integer().required(),
-  email: Joi.string().email().required(),
-  phone: Joi.string().allow(""),
-});
+exports.banValidation = (data) => {
+  const banSchema = Joi.object({
+    admin_id: Joi.number().required(),
+    user_id: Joi.number().required(),
+    email: Joi.string().email().required(),
+    phone: Joi.string().allow(""),
+    reason: Joi.string().required(),
+  });
 
-const updateBan = Joi.object({
-  phone: Joi.string().allow(""),
-});
-
-module.exports = {
-  createBan,
-  updateBan,
+  return banSchema.validate(data, { abortEarly: false });
 };

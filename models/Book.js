@@ -33,7 +33,7 @@ const Book = sequelize.define(
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
-    stock_quantity: {
+    quantity: {
       type: DataTypes.INTEGER,
       defaultValue: 0,
     },
