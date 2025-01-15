@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const customerMiddleware = require("../middlewares/customer.middleware");
 
 const {
   getAll,
@@ -7,6 +8,9 @@ const {
   updateById,
   deleteById,
 } = require("../controllers/cart-item.controller");
+
+// All cart operations require authentication
+router.use(customerMiddleware);
 
 router.get("/", getAll);
 router.get("/:id", getById);

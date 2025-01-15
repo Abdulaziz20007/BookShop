@@ -25,7 +25,8 @@ const getById = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    const { item_id, quantity, customer_id } = req.body;
+    const customer_id = req.customer.id;
+    const { item_id, quantity } = req.body;
     const cartItem = await CartItem.create({
       item_id,
       quantity,

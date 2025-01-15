@@ -168,6 +168,19 @@ const deleteById = async (req, res) => {
   }
 };
 
+const getMyCartItems = async (req, res) => {
+  try {
+    const customer_id = req.customer.id;
+    const items = await CartItem.findAll({ where: { customer_id } });
+    if (!items) {
+      return res.status(404).send({ msg: "Cart items topilmadi" });
+    }
+    res.send({ items });
+  } catch (err) {
+    errorHandler(err, res);
+  }
+};
+
 const login = async (req, res) => {
   try {
     const { email, password } = req.body;
@@ -265,4 +278,5 @@ module.exports = {
   logout,
   refreshToken,
   changePassword,
+  getMyCartItems,
 };
