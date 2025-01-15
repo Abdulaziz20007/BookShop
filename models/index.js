@@ -56,6 +56,7 @@ Review.belongsTo(Book, { foreignKey: "book_id" });
 Ban.belongsTo(Admin, { foreignKey: "admin_id" });
 Ban.belongsTo(Customer, { foreignKey: "user_id" });
 
+
 module.exports = {
   Admin,
   Author,
