@@ -1,7 +1,5 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
-const Order = require("./Order");
-const Book = require("./Book");
 
 const OrderItem = sequelize.define(
   "order_item",
@@ -29,8 +27,5 @@ const OrderItem = sequelize.define(
     timestamps: true,
   }
 );
-
-OrderItem.belongsTo(Order, { foreignKey: "order_id" });
-OrderItem.belongsTo(Book, { foreignKey: "book_id" });
 
 module.exports = OrderItem;

@@ -1,5 +1,5 @@
 const { errorHandler } = require("../helpers/error_handler");
-const Image = require("../models/Image");
+const { Image } = require("../models");
 
 const getAll = async (req, res) => {
   try {

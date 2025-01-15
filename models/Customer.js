@@ -1,8 +1,5 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
-const Order = require("./Order");
-const CartItem = require("./CartItem");
-const Review = require("./Review");
 
 const Customer = sequelize.define(
   "customer",
@@ -62,9 +59,5 @@ const Customer = sequelize.define(
     timestamps: true,
   }
 );
-
-Customer.hasMany(Order, { foreignKey: "customer_id" });
-Customer.hasMany(CartItem, { foreignKey: "customer_id" });
-Customer.hasMany(Review, { foreignKey: "customer_id" });
 
 module.exports = Customer;

@@ -1,6 +1,6 @@
 const { hashPassword, comparePassword } = require("../helpers/bcrypt");
 const { errorHandler } = require("../helpers/error_handler");
-const Customer = require("../models/Customer");
+const { Customer } = require("../models");
 const { customerValidation } = require("../validations/customer.validation");
 const jwtService = require("../services/jwt_service");
 

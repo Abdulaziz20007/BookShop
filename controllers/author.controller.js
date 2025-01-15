@@ -1,5 +1,5 @@
 const { errorHandler } = require("../helpers/error_handler");
-const Author = require("../models/Author");
+const { Author } = require("../models");
 
 const getAll = async (req, res) => {
   try {

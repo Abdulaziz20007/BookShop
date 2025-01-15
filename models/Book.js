@@ -1,9 +1,5 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
-const Category = require("./Category");
-const Author = require("./Author");
-const Image = require("./Image");
-const Review = require("./Review");
 
 const Book = sequelize.define(
   "book",
@@ -26,8 +22,8 @@ const Book = sequelize.define(
       allowNull: false,
     },
     author_id: {
-      type: DataTypes.STRING,
-      defaultValue: "",
+      type: DataTypes.INTEGER,
+      allowNull: false,
     },
     price: {
       type: DataTypes.DECIMAL(10, 2),
@@ -50,10 +46,5 @@ const Book = sequelize.define(
     timestamps: true,
   }
 );
-
-Book.belongsTo(Category, { foreignKey: "category_id" });
-Book.belongsTo(Author, { foreignKey: "author_id" });
-Book.hasMany(Image, { foreignKey: "book_id" });
-Book.hasMany(Review, { foreignKey: "book_id" });
 
 module.exports = Book;
