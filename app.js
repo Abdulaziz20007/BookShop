@@ -6,7 +6,7 @@ const sequelize = require("./config/db");
 const { requestLogging, errorLogging } = require("./helpers/express_winston");
 
 const PORT = config.get("port");
-const notFound = (req, res) => res.status(404).send("Not Found");
+const notFound = (req, res) => res.status(404).send("topilmadi");
 
 const app = express();
 app.use(express.json());

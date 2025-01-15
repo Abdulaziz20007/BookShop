@@ -15,7 +15,7 @@ const getById = async (req, res) => {
     const id = req.params.id;
     const plan = await Plan.findByPk(id);
     if (!plan) {
-      return res.status(404).send({ msg: "Plan not found" });
+      return res.status(404).send({ msg: "Plan topilmadi" });
     }
     res.send(plan);
   } catch (err) {
@@ -41,7 +41,7 @@ const updateById = async (req, res) => {
     const id = req.params.id;
     const plan = await Plan.findByPk(id);
     if (!plan) {
-      return res.status(404).send({ msg: "Plan not found" });
+      return res.status(404).send({ msg: "Plan topilmadi" });
     }
 
     const { month, percent } = req.body;
@@ -59,7 +59,7 @@ const deleteById = async (req, res) => {
     const id = req.params.id;
     const plan = await Plan.findByPk(id);
     if (!plan) {
-      return res.status(404).send({ msg: "Plan not found" });
+      return res.status(404).send({ msg: "Plan topilmadi" });
     }
     await Plan.destroy({ where: { plan_id: id } });
     res.send(plan);

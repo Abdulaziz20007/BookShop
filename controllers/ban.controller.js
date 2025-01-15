@@ -3,9 +3,7 @@ const Ban = require("../models/Ban");
 
 const getAll = async (req, res) => {
   try {
-    const bans = await Ban.findAll({
-      include: ["admin", "user"],
-    });
+    const bans = await Ban.findAll();
     res.send(bans);
   } catch (err) {
     errorHandler(err, res);
@@ -15,11 +13,9 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   try {
     const id = req.params.id;
-    const ban = await Ban.findByPk(id, {
-      include: ["admin", "user"],
-    });
+    const ban = await Ban.findByPk(id);
     if (!ban) {
-      return res.status(404).send({ msg: "Ban not found" });
+      return res.status(404).send({ msg: "Ban topilmadi" });
     }
     res.send(ban);
   } catch (err) {
@@ -38,9 +34,7 @@ const create = async (req, res) => {
       reason,
     });
 
-    const newBan = await Ban.findByPk(ban.id, {
-      include: ["admin", "user"],
-    });
+    const newBan = await Ban.findByPk(ban.id);
     res.status(201).send(newBan);
   } catch (err) {
     errorHandler(err, res);
@@ -52,15 +46,13 @@ const updateById = async (req, res) => {
     const id = req.params.id;
     const ban = await Ban.findByPk(id);
     if (!ban) {
-      return res.status(404).send({ msg: "Ban not found" });
+      return res.status(404).send({ msg: "Ban topilmadi" });
     }
 
     const { reason } = req.body;
     await Ban.update({ reason }, { where: { id } });
 
-    const updatedBan = await Ban.findByPk(id, {
-      include: ["admin", "user"],
-    });
+    const updatedBan = await Ban.findByPk(id);
     res.send(updatedBan);
   } catch (err) {
     errorHandler(err, res);
@@ -72,7 +64,7 @@ const deleteById = async (req, res) => {
     const id = req.params.id;
     const ban = await Ban.findByPk(id);
     if (!ban) {
-      return res.status(404).send({ msg: "Ban not found" });
+      return res.status(404).send({ msg: "Ban topilmadi" });
     }
     await Ban.destroy({ where: { id } });
     res.send(ban);

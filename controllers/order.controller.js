@@ -3,9 +3,7 @@ const Order = require("../models/Order");
 
 const getAll = async (req, res) => {
   try {
-    const orders = await Order.findAll({
-      include: ["customer", "order_items", "contract"],
-    });
+    const orders = await Order.findAll();
     res.send(orders);
   } catch (err) {
     errorHandler(err, res);
@@ -15,11 +13,9 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   try {
     const id = req.params.id;
-    const order = await Order.findByPk(id, {
-      include: ["customer", "order_items", "contract"],
-    });
+    const order = await Order.findByPk(id);
     if (!order) {
-      return res.status(404).send({ msg: "Order not found" });
+      return res.status(404).send({ msg: "Order topilmadi" });
     }
     res.send(order);
   } catch (err) {
@@ -39,9 +35,7 @@ const create = async (req, res) => {
       status,
     });
 
-    const newOrder = await Order.findByPk(order.order_id, {
-      include: ["customer", "order_items", "contract"],
-    });
+    const newOrder = await Order.findByPk(order.order_id);
     res.status(201).send(newOrder);
   } catch (err) {
     errorHandler(err, res);
@@ -53,7 +47,7 @@ const updateById = async (req, res) => {
     const id = req.params.id;
     const order = await Order.findByPk(id);
     if (!order) {
-      return res.status(404).send({ msg: "Order not found" });
+      return res.status(404).send({ msg: "Order topilmadi" });
     }
 
     const { total, delivery_date, status } = req.body;
@@ -62,9 +56,7 @@ const updateById = async (req, res) => {
       { where: { order_id: id } }
     );
 
-    const updatedOrder = await Order.findByPk(id, {
-      include: ["customer", "order_items", "contract"],
-    });
+    const updatedOrder = await Order.findByPk(id);
     res.send(updatedOrder);
   } catch (err) {
     errorHandler(err, res);
@@ -76,7 +68,7 @@ const deleteById = async (req, res) => {
     const id = req.params.id;
     const order = await Order.findByPk(id);
     if (!order) {
-      return res.status(404).send({ msg: "Order not found" });
+      return res.status(404).send({ msg: "Order topilmadi" });
     }
     await Order.destroy({ where: { order_id: id } });
     res.send(order);

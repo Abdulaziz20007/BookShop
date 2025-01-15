@@ -38,17 +38,27 @@ const create = async (req, res) => {
       errorHandler(error, res);
     }
 
-    const { name, surname, email, phone, password, birth_date, passport_seria, passport_number, address } = value;
+    const {
+      name,
+      surname,
+      email,
+      phone,
+      password,
+      birth_date,
+      passport_seria,
+      passport_number,
+      address,
+    } = value;
     const customer = await Customer.create({
       name,
-      surname, 
+      surname,
       email,
       phone,
       password: hashPassword(password),
       birth_date,
       passport_seria,
       passport_number,
-      address
+      address,
     });
 
     const newCustomer = await Customer.findByPk(customer.id, {
@@ -68,13 +78,23 @@ const updateById = async (req, res) => {
     const oldCustomer = await Customer.findByPk(id);
 
     if (!oldCustomer) {
-      return res.status(404).send({ msg: "Customer not found" });
+      return res.status(404).send({ msg: "Customer topilmadi" });
     }
     const { error, value } = customerValidation(req.body);
     if (error) {
       errorHandler(error, res);
     }
-    const { name, surname, email, phone, password, birth_date, passport_seria, passport_number, address } = value;
+    const {
+      name,
+      surname,
+      email,
+      phone,
+      password,
+      birth_date,
+      passport_seria,
+      passport_number,
+      address,
+    } = value;
     if (!comparePassword(password, oldCustomer.password)) {
       return res.status(400).send({ msg: "Invalid password" });
     }
@@ -87,7 +107,7 @@ const updateById = async (req, res) => {
         birth_date,
         passport_seria,
         passport_number,
-        address
+        address,
       },
       {
         where: { id },
@@ -114,7 +134,7 @@ const changePassword = async (req, res) => {
       attributes: { exclude: ["refreshToken", "createdAt", "updatedAt"] },
     });
     if (!customer) {
-      return res.status(404).send({ msg: "Customer not found" });
+      return res.status(404).send({ msg: "Customer topilmadi" });
     }
     const { oldPassword, newPassword } = req.body;
     if (!comparePassword(oldPassword, customer.password)) {
@@ -139,7 +159,7 @@ const deleteById = async (req, res) => {
       },
     });
     if (!oldCustomer) {
-      return res.status(404).send({ msg: "Customer not found" });
+      return res.status(404).send({ msg: "Customer topilmadi" });
     }
     const customer = await Customer.destroy({ where: { id } });
     res.send({ customer: oldCustomer });
@@ -163,7 +183,7 @@ const login = async (req, res) => {
       id: customer.id,
       email: customer.email,
       name: customer.name,
-      surname: customer.surname
+      surname: customer.surname,
     };
 
     const tokens = jwtService.generateTokens(payload);
@@ -186,7 +206,7 @@ const logout = async (req, res) => {
   try {
     const refresh_token = req.customer.refreshToken;
     if (!refresh_token) {
-      return res.status(401).send({ msg: "Token not found" });
+      return res.status(401).send({ msg: "Token topilmadi" });
     }
     const customer = await Customer.findOne({ where: { refresh_token } });
     if (!customer) {
@@ -204,12 +224,12 @@ const refreshToken = async (req, res) => {
   try {
     const refresh_token = req.customer.refreshToken;
     if (!refresh_token) {
-      return res.status(401).send({ msg: "Token not found" });
+      return res.status(401).send({ msg: "Token topilmadi" });
     }
 
     const customer = await Customer.findOne({ where: { refreshToken } });
     if (!customer) {
-      return res.status(404).send({ msg: "Customer not found" });
+      return res.status(404).send({ msg: "Customer topilmadi" });
     }
 
     const tokens = jwtService.generateTokens({

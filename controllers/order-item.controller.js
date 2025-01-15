@@ -3,9 +3,7 @@ const OrderItem = require("../models/OrderItem");
 
 const getAll = async (req, res) => {
   try {
-    const orderItems = await OrderItem.findAll({
-      include: ["order", "book"],
-    });
+    const orderItems = await OrderItem.findAll();
     res.send(orderItems);
   } catch (err) {
     errorHandler(err, res);
@@ -15,11 +13,9 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   try {
     const id = req.params.id;
-    const orderItem = await OrderItem.findByPk(id, {
-      include: ["order", "book"],
-    });
+    const orderItem = await OrderItem.findByPk(id);
     if (!orderItem) {
-      return res.status(404).send({ msg: "Order item not found" });
+      return res.status(404).send({ msg: "Order item topilmadi" });
     }
     res.send(orderItem);
   } catch (err) {
@@ -36,9 +32,7 @@ const create = async (req, res) => {
       quantity,
     });
 
-    const newOrderItem = await OrderItem.findByPk(orderItem.id, {
-      include: ["order", "book"],
-    });
+    const newOrderItem = await OrderItem.findByPk(orderItem.id);
     res.status(201).send(newOrderItem);
   } catch (err) {
     errorHandler(err, res);
@@ -50,15 +44,13 @@ const updateById = async (req, res) => {
     const id = req.params.id;
     const orderItem = await OrderItem.findByPk(id);
     if (!orderItem) {
-      return res.status(404).send({ msg: "Order item not found" });
+      return res.status(404).send({ msg: "Order item topilmadi" });
     }
 
     const { quantity } = req.body;
     await OrderItem.update({ quantity }, { where: { id } });
 
-    const updatedOrderItem = await OrderItem.findByPk(id, {
-      include: ["order", "book"],
-    });
+    const updatedOrderItem = await OrderItem.findByPk(id);
     res.send(updatedOrderItem);
   } catch (err) {
     errorHandler(err, res);
@@ -70,7 +62,7 @@ const deleteById = async (req, res) => {
     const id = req.params.id;
     const orderItem = await OrderItem.findByPk(id);
     if (!orderItem) {
-      return res.status(404).send({ msg: "Order item not found" });
+      return res.status(404).send({ msg: "Order item topilmadi" });
     }
     await OrderItem.destroy({ where: { id } });
     res.send(orderItem);

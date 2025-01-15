@@ -3,9 +3,7 @@ const Contract = require("../models/Contract");
 
 const getAll = async (req, res) => {
   try {
-    const contracts = await Contract.findAll({
-      include: ["order", "plan", "payments"],
-    });
+    const contracts = await Contract.findAll();
     res.send(contracts);
   } catch (err) {
     errorHandler(err, res);
@@ -15,11 +13,9 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   try {
     const id = req.params.id;
-    const contract = await Contract.findByPk(id, {
-      include: ["order", "plan", "payments"],
-    });
+    const contract = await Contract.findByPk(id);
     if (!contract) {
-      return res.status(404).send({ msg: "Contract not found" });
+      return res.status(404).send({ msg: "Contract topilmadi" });
     }
     res.send(contract);
   } catch (err) {
@@ -51,9 +47,7 @@ const create = async (req, res) => {
       total,
     });
 
-    const newContract = await Contract.findByPk(contract.id, {
-      include: ["order", "plan", "payments"],
-    });
+    const newContract = await Contract.findByPk(contract.id);
     res.status(201).send(newContract);
   } catch (err) {
     errorHandler(err, res);
@@ -65,7 +59,7 @@ const updateById = async (req, res) => {
     const id = req.params.id;
     const contract = await Contract.findByPk(id);
     if (!contract) {
-      return res.status(404).send({ msg: "Contract not found" });
+      return res.status(404).send({ msg: "Contract topilmadi" });
     }
 
     const { end_date, monthly_payment, next_payment, total } = req.body;
@@ -75,9 +69,7 @@ const updateById = async (req, res) => {
       { where: { id } }
     );
 
-    const updatedContract = await Contract.findByPk(id, {
-      include: ["order", "plan", "payments"],
-    });
+    const updatedContract = await Contract.findByPk(id);
     res.send(updatedContract);
   } catch (err) {
     errorHandler(err, res);
@@ -89,7 +81,7 @@ const deleteById = async (req, res) => {
     const id = req.params.id;
     const contract = await Contract.findByPk(id);
     if (!contract) {
-      return res.status(404).send({ msg: "Contract not found" });
+      return res.status(404).send({ msg: "Contract topilmadi" });
     }
     await Contract.destroy({ where: { id } });
     res.send(contract);

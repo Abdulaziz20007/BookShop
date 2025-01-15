@@ -3,9 +3,7 @@ const Category = require("../models/Category");
 
 const getAll = async (req, res) => {
   try {
-    const categories = await Category.findAll({
-      include: ["books", "parent"],
-    });
+    const categories = await Category.findAll();
     res.send(categories);
   } catch (err) {
     errorHandler(err, res);
@@ -15,11 +13,9 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   try {
     const id = req.params.id;
-    const category = await Category.findByPk(id, {
-      include: ["books", "parent"],
-    });
+    const category = await Category.findByPk(id);
     if (!category) {
-      return res.status(404).send({ msg: "Category not found" });
+      return res.status(404).send({ msg: "Category topilmadi" });
     }
     res.send(category);
   } catch (err) {
@@ -46,7 +42,7 @@ const updateById = async (req, res) => {
     const id = req.params.id;
     const category = await Category.findByPk(id);
     if (!category) {
-      return res.status(404).send({ msg: "Category not found" });
+      return res.status(404).send({ msg: "Category topilmadi" });
     }
 
     const { parent_category_id, name, description } = req.body;
@@ -55,9 +51,7 @@ const updateById = async (req, res) => {
       { where: { id } }
     );
 
-    const updatedCategory = await Category.findByPk(id, {
-      include: ["books", "parent"],
-    });
+    const updatedCategory = await Category.findByPk(id);
     res.send(updatedCategory);
   } catch (err) {
     errorHandler(err, res);
@@ -69,7 +63,7 @@ const deleteById = async (req, res) => {
     const id = req.params.id;
     const category = await Category.findByPk(id);
     if (!category) {
-      return res.status(404).send({ msg: "Category not found" });
+      return res.status(404).send({ msg: "Category topilmadi" });
     }
     await Category.destroy({ where: { id } });
     res.send(category);

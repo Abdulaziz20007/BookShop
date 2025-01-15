@@ -15,7 +15,7 @@ const getById = async (req, res) => {
     const id = req.params.id;
     const payment = await Payment.findByPk(id);
     if (!payment) {
-      return res.status(404).send({ msg: "Payment not found" });
+      return res.status(404).send({ msg: "Payment topilmadi" });
     }
     res.send(payment);
   } catch (err) {
@@ -50,7 +50,7 @@ const updateById = async (req, res) => {
     const id = req.params.id;
     const payment = await Payment.findByPk(id);
     if (!payment) {
-      return res.status(404).send({ msg: "Payment not found" });
+      return res.status(404).send({ msg: "Payment topilmadi" });
     }
 
     const { amount, payment_date, payment_method, payment_status } = req.body;
@@ -71,7 +71,7 @@ const deleteById = async (req, res) => {
     const id = req.params.id;
     const payment = await Payment.findByPk(id);
     if (!payment) {
-      return res.status(404).send({ msg: "Payment not found" });
+      return res.status(404).send({ msg: "Payment topilmadi" });
     }
     await Payment.destroy({ where: { payment_id: id } });
     res.send(payment);

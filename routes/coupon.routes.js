@@ -6,7 +6,7 @@ const {
   create,
   updateById,
   deleteById,
-} = require("../controllers/book.controller");
+} = require("../controllers/coupon.controller");
 
 router.get("/", getAll);
 router.get("/:id", getById);

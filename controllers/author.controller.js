@@ -15,7 +15,7 @@ const getById = async (req, res) => {
     const id = req.params.id;
     const author = await Author.findByPk(id);
     if (!author) {
-      return res.status(404).send({ msg: "Author not found" });
+      return res.status(404).send({ msg: "Author topilmadi" });
     }
     res.send(author);
   } catch (err) {
@@ -46,7 +46,7 @@ const updateById = async (req, res) => {
     const id = req.params.id;
     const author = await Author.findByPk(id);
     if (!author) {
-      return res.status(404).send({ msg: "Author not found" });
+      return res.status(404).send({ msg: "Author topilmadi" });
     }
 
     const { name, surname, biography, birth_date, nationality, wiki_url } =
@@ -68,7 +68,7 @@ const deleteById = async (req, res) => {
     const id = req.params.id;
     const author = await Author.findByPk(id);
     if (!author) {
-      return res.status(404).send({ msg: "Author not found" });
+      return res.status(404).send({ msg: "Author topilmadi" });
     }
     await Author.destroy({ where: { id } });
     res.send(author);

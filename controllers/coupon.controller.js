@@ -15,7 +15,7 @@ const getById = async (req, res) => {
     const id = req.params.id;
     const coupon = await Coupon.findByPk(id);
     if (!coupon) {
-      return res.status(404).send({ msg: "Coupon not found" });
+      return res.status(404).send({ msg: "Coupon topilmadi" });
     }
     res.send(coupon);
   } catch (err) {
@@ -45,7 +45,7 @@ const updateById = async (req, res) => {
     const id = req.params.id;
     const coupon = await Coupon.findByPk(id);
     if (!coupon) {
-      return res.status(404).send({ msg: "Coupon not found" });
+      return res.status(404).send({ msg: "Coupon topilmadi" });
     }
 
     const { discount, until, times_used, is_active } = req.body;
@@ -66,7 +66,7 @@ const deleteById = async (req, res) => {
     const id = req.params.id;
     const coupon = await Coupon.findByPk(id);
     if (!coupon) {
-      return res.status(404).send({ msg: "Coupon not found" });
+      return res.status(404).send({ msg: "Coupon topilmadi" });
     }
     await Coupon.destroy({ where: { coupon_id: id } });
     res.send(coupon);
