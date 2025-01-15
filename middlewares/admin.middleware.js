@@ -33,4 +33,16 @@ const adminMiddleware = async (req, res, next) => {
   }
 };
 
-module.exports = adminMiddleware;
+const adminSelfMiddleware = async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    if (id !== req.admin.id) {
+      return res.status(403).send({ msg: "Ruxsat yo'q" });
+    }
+    next();
+  } catch (error) {
+    errorHandler(error, res);
+  }
+};
+
+module.exports = { adminMiddleware, adminSelfMiddleware };

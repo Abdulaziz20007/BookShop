@@ -41,9 +41,20 @@ const customerMiddleware = async (req, res, next) => {
 
     req.customer = customer;
     next();
-  } catch (error) {
+  } catch (err) {
     return res.status(500).send({ msg: "Ichki server xatosi" });
   }
 };
 
-module.exports = customerMiddleware;
+const customerSelfMiddleware = async (req, res, next) => {
+  try {
+    const id = req.params.id;
+    if (id !== req.customer.id) {
+      return res.status(403).send({ msg: "Ruxsat yo'q" });
+    }
+  } catch (err) {
+    return res.status(500).send({ msg: "Ichki server xatosi" });
+  }
+};
+
+module.exports = { customerMiddleware, customerSelfMiddleware };
