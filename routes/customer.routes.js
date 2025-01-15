@@ -14,19 +14,16 @@ const {
   getMyCartItems,
 } = require("../controllers/customer.controller");
 
-// Public routes (no auth required)
 router.post("/login", login);
-router.post("/", create); // signup
+router.post("/", create);
 router.post("/refresh", refreshToken);
 
-// Protected routes (require authentication)
-router.use(customerMiddleware); // Apply middleware to all routes below
+router.use(customerMiddleware);
 
 router.post("/logout", logout);
-router.get("/cart/items", getMyCartItems); // Fixed path for cart items
-router.put("/change-password", changePassword); // Removed :id as it comes from token
+router.get("/cart/items", getMyCartItems);
+router.put("/change-password", changePassword);
 
-// Admin only routes - should be moved to admin routes
 router.get("/", getAll);
 router.get("/:id", getById);
 router.put("/:id", updateById);

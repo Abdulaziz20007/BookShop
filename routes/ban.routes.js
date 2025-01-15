@@ -9,7 +9,6 @@ const {
   deleteById,
 } = require("../controllers/ban.controller");
 
-// All ban operations require admin authentication
 router.use(adminMiddleware);
 
 router.get("/", getAll);

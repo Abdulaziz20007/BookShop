@@ -9,7 +9,6 @@ const {
   deleteById,
 } = require("../controllers/cart-item.controller");
 
-// All cart operations require authentication
 router.use(customerMiddleware);
 
 router.get("/", getAll);
