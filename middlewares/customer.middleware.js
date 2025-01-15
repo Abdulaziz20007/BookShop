@@ -14,17 +14,15 @@ const customerMiddleware = async (req, res, next) => {
       return res.status(401).send({ msg: "Token noto'gri" });
     }
 
-    const decoded = await jwtService.verifyAccessToken(token);
-    const customer = await Customer.findByPk(decoded.id);
+    const customer = await jwtService.verifyAccessToken(token);
 
     if (!customer) {
-      return res.status(401).send({ msg: "Token noto'gri" });
+      return res.status(401).send({ msg: "Token noto'g'ri" });
     }
 
     const ban = await Ban.findOne({
       where: {
         user_id: customer.id,
-        is_active: true,
       },
     });
 

@@ -13,22 +13,14 @@ const adminMiddleware = async (req, res, next) => {
       return res.status(401).send({ msg: "Token noto'gri" });
     }
 
-    const decoded = await jwtService.verifyAccessToken(token);
-    const admin = await Admin.findByPk(decoded.id);
-
+    const admin = await jwtService.verifyAccessToken(token);
     if (!admin) {
-      return res.status(401).send({ msg: "Token noto'gri" });
+      return res.status(401).send({ msg: "Token noto'g'ri" });
     }
 
     req.admin = admin;
     next();
   } catch (error) {
-    if (error instanceof jwt.TokenExpiredError) {
-      return res.status(401).send({ msg: "Token muddati tugagan" });
-    }
-    if (error instanceof jwt.JsonWebTokenError) {
-      return res.status(401).send({ msg: "Yaroqsiz token" });
-    }
     return res.status(500).send({ msg: "Ichki server xatosi" });
   }
 };

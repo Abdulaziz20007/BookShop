@@ -173,7 +173,7 @@ const getMyCartItems = async (req, res) => {
     const customer_id = req.customer.id;
     const items = await CartItem.findAll({ where: { customer_id } });
     if (!items) {
-      return res.status(404).send({ msg: "Cart items topilmadi" });
+      return res.status(404).send({ msg: "Cart bo'sh" });
     }
     res.send({ items });
   } catch (err) {
@@ -186,10 +186,10 @@ const login = async (req, res) => {
     const { email, password } = req.body;
     const customer = await Customer.findOne({ where: { email } });
     if (!customer) {
-      return res.status(404).send({ msg: "Invalid email or password" });
+      return res.status(404).send({ msg: "Email yoki parol noto'g'ri" });
     }
     if (!comparePassword(password, customer.password)) {
-      return res.status(400).send({ msg: "Invalid email or password" });
+      return res.status(400).send({ msg: "Email yoki parol noto'g'ri" });
     }
 
     const payload = {
@@ -197,6 +197,7 @@ const login = async (req, res) => {
       email: customer.email,
       name: customer.name,
       surname: customer.surname,
+      is_active: customer.is_active,
     };
 
     const tokens = jwtService.generateTokens(payload);
@@ -223,11 +224,11 @@ const logout = async (req, res) => {
     }
     const customer = await Customer.findOne({ where: { refresh_token } });
     if (!customer) {
-      return res.status(401).send({ msg: "Invalid token" });
+      return res.status(401).send({ msg: "Noto'g'ri token" });
     }
     await Customer.update({ refreshToken: "" }, { where: { refresh_token } });
     res.clearCookie("refreshToken");
-    res.send({ msg: "Successfully logged out" });
+    res.send({ msg: "Tizimdan chiqildi" });
   } catch (err) {
     errorHandler(err, res);
   }

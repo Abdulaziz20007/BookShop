@@ -153,6 +153,13 @@ const login = async (req, res) => {
       return res.status(400).send({ msg: "Email yoki parol noto'g'ri" });
     }
 
+    const payload = {
+      id: admin.id,
+      email: admin.email,
+      name: admin.name,
+      surname: admin.surname,
+    };
+
     const tokens = jwtService.generateTokens(payload);
     await Admin.update(
       { refreshToken: tokens.refreshToken },

@@ -21,10 +21,6 @@ const Order = sequelize.define(
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
     },
-    delivery_date: {
-      type: DataTypes.DATE,
-      defaultValue: null,
-    },
     status: {
       type: DataTypes.ENUM(
         "pending",

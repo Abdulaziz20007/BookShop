@@ -1,9 +1,20 @@
 const { errorHandler } = require("../helpers/error_handler");
-const { Contract } = require("../models");
+const { Contract, Customer, Order, Plan } = require("../models");
+const contractValidation = require("../validations/contract.validation");
 
 const getAll = async (req, res) => {
   try {
-    const contracts = await Contract.findAll();
+    const contracts = await Contract.findAll({
+      include: [
+        {
+          model: Order,
+          include: [{ model: Customer }],
+        },
+        {
+          model: Plan,
+        },
+      ],
+    });
     res.send(contracts);
   } catch (err) {
     errorHandler(err, res);
@@ -13,7 +24,17 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   try {
     const id = req.params.id;
-    const contract = await Contract.findByPk(id);
+    const contract = await Contract.findByPk(id, {
+      include: [
+        {
+          model: Order,
+          include: [{ model: Customer }],
+        },
+        {
+          model: Plan,
+        },
+      ],
+    });
     if (!contract) {
       return res.status(404).send({ msg: "Contract topilmadi" });
     }
@@ -29,18 +50,36 @@ const create = async (req, res) => {
       order_id,
       plan_id,
       start_date,
-      end_date,
       first_payment,
       monthly_payment,
       next_payment,
       total,
     } = req.body;
 
+    if (start_date > new Date()) {
+      return res.status(400).send({
+        msg: "Boshlanish sanasi hozirgi sana dan oldin bo'lmasligi kerak",
+      });
+    }
+
+    const { error, value } = contractValidation(req.body);
+    if (error) {
+      errorHandler(error, res);
+    }
+
+    const order = await Order.findByPk(order_id, {
+      include: [{ model: Customer }],
+    });
+    if (!order) {
+      return res.status(404).send({ msg: "Order topilmadi" });
+    }
+
+    const customer = order.customer;
+
     const contract = await Contract.create({
       order_id,
       plan_id,
       start_date,
-      end_date,
       first_payment,
       monthly_payment,
       next_payment,
