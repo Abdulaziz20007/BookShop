@@ -1,5 +1,5 @@
 const { errorHandler } = require("../helpers/error_handler");
-const Coupon = require("../models/Coupon");
+const { Coupon } = require("../models");
 
 const getAll = async (req, res) => {
   try {

@@ -1,5 +1,5 @@
 const { errorHandler } = require("../helpers/error_handler");
-const CartItem = require("../models/CartItem");
+const { CartItem } = require("../models");
 
 const getAll = async (req, res) => {
   try {

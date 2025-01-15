@@ -1,7 +1,5 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
-const Customer = require("./Customer");
-const Book = require("./Book");
 
 const Review = sequelize.define(
   "review",
@@ -36,8 +34,5 @@ const Review = sequelize.define(
     timestamps: true,
   }
 );
-
-Review.belongsTo(Customer, { foreignKey: "customer_id" });
-Review.belongsTo(Book, { foreignKey: "book_id" });
 
 module.exports = Review;

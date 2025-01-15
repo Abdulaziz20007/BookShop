@@ -2,7 +2,7 @@ const express = require("express");
 const config = require("config");
 const cookieParser = require("cookie-parser");
 const logger = require("./services/logger.service");
-const sequelize = require("./config/db");
+const db = require("./models");
 const { requestLogging, errorLogging } = require("./helpers/express_winston");
 
 const PORT = config.get("port");
@@ -20,13 +20,13 @@ app.use(errorLogging);
 
 async function start() {
   try {
-    await sequelize.authenticate();
-    await sequelize.sync({ alter: true });
+    await db.sequelize.authenticate();
+    await db.sequelize.sync({ force: true });
     app.listen(PORT, () => {
       console.log(`server started at: http://localhost:${PORT}`);
     });
   } catch (error) {
-    console.log(error);
+    console.log("Database Error:", error);
     console.log("Malumotlar bazasiga ulanishda xatolik");
   }
 }

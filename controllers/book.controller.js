@@ -1,5 +1,5 @@
 const { errorHandler } = require("../helpers/error_handler");
-const Book = require("../models/Book");
+const { Book } = require("../models");
 
 const getAll = async (req, res) => {
   try {

@@ -1,8 +1,5 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../config/db");
-const Order = require("./Order");
-const Plan = require("./Plan");
-const Payment = require("./Payment");
 
 const Contract = sequelize.define(
   "contract",
@@ -49,9 +46,5 @@ const Contract = sequelize.define(
     timestamps: true,
   }
 );
-
-Contract.belongsTo(Order, { foreignKey: "order_id" });
-Contract.belongsTo(Plan, { foreignKey: "plan_id" });
-Contract.hasMany(Payment, { foreignKey: "contract_id" });
 
 module.exports = Contract;
