@@ -4,5 +4,11 @@
   "db_usermame": "postgres",
   "db_port": 5432,
   "db_password": "rooot",
-  "db_name": "bookshop"
+  "db_name": "bookshop",
+  "bcrypt_round": 7,
+  "access_key": "MyJWTAccessKey",
+  "refresh_key": "MyJWTRefreshKey",
+  "access_time": "1h",
+  "refresh_time": "1d",
+  "cookie_time": 86400000
 }

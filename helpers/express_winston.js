@@ -3,12 +3,12 @@ const expressWinston = require("express-winston");
 
 module.exports = {
   requestLogging: expressWinston.logger({
-    
-    transports: [new winston.transports.Console()],
-    format: winston.format.combine(
-      winston.format.colorize(),
-      winston.format.json()
-    ),
+    transports: [
+      new winston.transports.File({
+        filename: "./logs/requests.log",
+      }),
+    ],
+    format: winston.format.combine(winston.format.prettyPrint()),
     meta: true, // optional: control whether you want to log the meta data about the request (default to true)
     msg: "HTTP {{req.method}} {{req.url}}", // optional: customize the default logging message. E.g. "{{res.statusCode}} {{req.method}} {{res.responseTime}}ms {{req.url}}"
     expressFormat: true, // Use the default Express/morgan request formatting. Enabling this will override any msg if true. Will only output colors with colorize set to true
@@ -17,12 +17,13 @@ module.exports = {
       return false;
     }, // optional: allows to skip some log messages based on request and/or response
   }),
-  
+
   errorLogging: expressWinston.errorLogger({
-    transports: [new winston.transports.Console()],
-    format: winston.format.combine(
-      winston.format.colorize(),
-      winston.format.json()
-    ),
+    transports: [
+      new winston.transports.File({
+        filename: "./logs/requestErrors.log",
+      }),
+    ],
+    format: winston.format.combine(winston.format.prettyPrint()),
   }),
 };
