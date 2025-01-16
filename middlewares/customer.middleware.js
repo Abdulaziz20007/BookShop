@@ -1,7 +1,7 @@
 const Customer = require("../models/Customer");
 const Ban = require("../models/Ban");
 const jwtService = require("../services/jwt_service");
-const {errorHandler} = require("../helpers/error_handler");
+const { errorHandler } = require("../helpers/error_handler");
 
 const customerMiddleware = async (req, res, next) => {
   try {
@@ -37,9 +37,11 @@ const customerMiddleware = async (req, res, next) => {
 const customerSelfMiddleware = async (req, res, next) => {
   try {
     const id = req.params.id;
-    if (id !== req.customer.id) {
+    if (id != req.customer.id) {
       return res.status(403).send({ msg: "Ruxsat yo'q" });
     }
+    // console.log("A");
+    next();
   } catch (err) {
     errorHandler(err, res);
   }

@@ -36,24 +36,29 @@ const getSalesReport = async (req, res) => {
           include: [
             {
               model: Book,
-              attributes: ["title", "price"]
-            }
-          ]
-        }
+              attributes: ["title", "price"],
+            },
+          ],
+        },
       ],
     });
 
-    const result = orders.map((order) => ({
-      mijoz: `${order.customer.surname} ${order.customer.name}`,
-      telefon: order.customer.phone,
-      kitoblar: order.orderItems.map((item) => ({
-        nomi: item.book.title,
-        narxi: item.book.price,
-        soni: item.quantity,
-      })),
-      jami: order.total,
-      sana: order.createdAt,
-    }));
+    let data = [];
+
+    const result = orders.forEach(
+      (order) =>
+        (data += {
+          mijoz: `${order.customer.surname} ${order.customer.name}`,
+          telefon: order.customer.phone,
+          kitoblar: order.orderItems.map((item) => ({
+            nomi: item.book.title,
+            narxi: item.book.price,
+            soni: item.quantity,
+          })),
+          jami: order.total,
+          sana: order.createdAt,
+        })
+    );
 
     res.send(result);
   } catch (err) {
@@ -87,10 +92,10 @@ const getOverduePayments = async (req, res) => {
               include: [
                 {
                   model: Book,
-                  attributes: ["title"]
-                }
-              ]
-            }
+                  attributes: ["title"],
+                },
+              ],
+            },
           ],
         },
       ],
@@ -103,7 +108,9 @@ const getOverduePayments = async (req, res) => {
 
       return {
         mijoz: `${contract.customer.surname} ${contract.customer.name}`,
-        kitoblar: contract.order.orderItems.map((item) => item.book.title).join(", "),
+        kitoblar: contract.order.orderItems
+          .map((item) => item.book.title)
+          .join(", "),
         shartnoma_raqami: contract.id,
         tolov_summasi: contract.next_payment,
         kechikkan_kunlar: kunlarSoni,

@@ -36,25 +36,24 @@ const getById = async (req, res) => {
 const create = async (req, res) => {
   try {
     const payment_date = new Date();
-    const {
-      contract_id,
-      amount,
-      payment_method,
-      payment_status,
-    } = req.body;
-    const payment = await Payment.create({
-      contract_id,
-      amount,
-      payment_date,
-      payment_method,
-      payment_status,
-    });
-    res.status(201).send(payment, {
-      include: {
-        model: Contract,
-        attributes: { exclude: ["createdAt", "updatedAt"] },
+    const { contract_id, amount, payment_method, payment_status } = req.body;
+    const payment = await Payment.create(
+      {
+        contract_id,
+        amount,
+        payment_date,
+        payment_method,
+        payment_status,
       },
-    });
+      {
+        include: {
+          model: Contract,
+          attributes: { exclude: ["createdAt", "updatedAt"] },
+        },
+      }
+    );
+    
+    res.status(201).send(payment);
   } catch (err) {
     errorHandler(err, res);
   }
