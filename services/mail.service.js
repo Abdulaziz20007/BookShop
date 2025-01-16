@@ -15,7 +15,7 @@ class MailService {
     });
   }
   async sendMailActivationCode(toEmail, verification) {
-    const url = `${config.get("domain")}/customer/verify/${verification}`;
+    const url = `${config.get("domain")}/api/customer/verify/${verification}`;
     await this.transporter.sendMail({
       from: config.get("smtp_user"),
       to: toEmail,

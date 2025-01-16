@@ -7,7 +7,7 @@ const getAll = async (req, res) => {
       include: [
         {
           model: Book,
-          // attributes: {
+          // attributes: {  
           //   exclude: ["createdAt", "updatedAt"],
           //   include: [
           //     {

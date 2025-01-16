@@ -12,6 +12,16 @@
 				{
 					"name": "Get All Admins",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjIiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzY5NTQ2MDcsImV4cCI6MTczNjk1ODIwN30.JxhGr0uzePuIHT45kanW_noN8lADykuopqvkDL3Xacw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
 						"url": {
@@ -62,7 +72,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"John\",\n  \"surname\": \"Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"+1234567890\",\n  \"password\": \"password123\"\n}"
+							"raw": "{\n  \"name\": \"John\",\n  \"surname\": \"Doe\",\n  \"email\": \"none@none.com\",\n  \"phone\": \"1234567890\",\n  \"password\": \"password\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/admin",
@@ -82,6 +92,16 @@
 				{
 					"name": "Update Admin",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzY5NDM3ODAsImV4cCI6MTczNjk0NzM4MH0.t8OCru7PVS3wVEKQDZD5hLSA3EN3nZOFGPzP4rWgWwQ",
+									"type": "string"
+								}
+							]
+						},
 						"method": "PUT",
 						"header": [
 							{
@@ -91,7 +111,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"John\",\n  \"surname\": \"Doe\",\n  \"email\": \"john@example.com\",\n  \"phone\": \"+1234567890\",\n  \"password\": \"password123\"\n}"
+							"raw": "{\n  \"name\": \"aJohn\",\n  \"surname\": \"Doe\",\n  \"email\": \"none@none.com\",\n  \"phone\": \"1234567890\",\n  \"password\": \"password\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/admin/1",
@@ -112,6 +132,16 @@
 				{
 					"name": "Delete Admin",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiYUpvaG4iLCJzdXJuYW1lIjoiRG9lIiwiaWF0IjoxNzM2OTQzOTM4LCJleHAiOjE3MzY5NDc1Mzh9.4wnCQzNKH8iPsXSbbhDIqYtN1cPv08goWUrtT05srYw",
+									"type": "string"
+								}
+							]
+						},
 						"method": "DELETE",
 						"header": [],
 						"url": {
@@ -142,7 +172,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"email\": \"john@example.com\",\n  \"password\": \"password123\"\n}"
+							"raw": "{\n  \"email\": \"none@none.com\",\n  \"password\": \"password\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/admin/login",
@@ -170,6 +200,15 @@
 								"value": "Bearer YOUR_TOKEN_HERE"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "http://localhost:3000/api/admin/logout",
 							"protocol": "http",
@@ -181,6 +220,365 @@
 								"api",
 								"admin",
 								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/admin/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\": \"password\",\r\n    \"newPassword\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/admin/change",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"change"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sales",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Sales Copy",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get All Customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Customer by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"John\",\n  \"surname\": \"Doe\",\n  \"email\": \"none@none.com\",\n  \"phone\": \"1234567890\",\n  \"password\": \"password\",\n  \"passport_seria\": \"AA\",\n  \"passport_number\": 1234567,\n  \"address\": \"London\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/customer",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzY5NDM3NTgsImV4cCI6MTczNjk0NzM1OH0.ZXjRl5pOCY6tXXNcpCewF7X_6VtOGMISXK6UjgiAzSg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"aJohn\",\n  \"surname\": \"Doe\",\n  \"email\": \"none@none.com\",\n  \"phone\": \"1234567890\",\n  \"password\": \"password\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/customer/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"none@none.com\",\n  \"password\": \"password\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/admin/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/customer/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer",
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer YOUR_TOKEN_HERE"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/customer/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJub25lQG5vbmUuY29tIiwibmFtZSI6IkpvaG4iLCJzdXJuYW1lIjoiRG9lIiwiaWF0IjoxNzM2OTk1ODUwLCJleHAiOjE3MzY5OTk0NTB9.Vo0rcTNlWxGzSJrO6cP4lJvnIVNxQk88Qkqvkj3ecDA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\": \"password\",\r\n    \"newPassword\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/customer/change",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"customer",
+								"change"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/verify/5832dcdc-f369-48e3-a2fe-58ac8aae4172",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"verify",
+								"5832dcdc-f369-48e3-a2fe-58ac8aae4172"
 							]
 						}
 					},
@@ -319,9 +717,31 @@
 			"item": [
 				{
 					"name": "Get All Bans",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJuLmFiZHVsYXppejAyMDdAZ21haWwuY29tIiwibmFtZSI6IkpvaG4iLCJzdXJuYW1lIjoiRG9lIiwiaWF0IjoxNzM3MDE4NTkwLCJleHAiOjE3MzcwMjIxOTB9.Zs3MmxyZM7uarpoF2MIXHr7MxfyeqveV-0V0cWY3ToE",
+									"type": "string"
+								}
+							]
+						},
 						"method": "GET",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"user_id\":\"\", \"email\":\"\", \"phone\":\"\", \"reason\":\"\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
 							"raw": "http://localhost:3000/api/ban",
 							"protocol": "http",
@@ -361,6 +781,16 @@
 				{
 					"name": "Create Ban",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzY5NTU3ODUsImV4cCI6MTczNjk1OTM4NX0.IMhyEvrcTmLOmtcp8AnCiezEeETrOmS6DFEoDR2fzIg",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -370,7 +800,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"admin_id\": 1,\n  \"user_id\": 1,\n  \"email\": \"user@example.com\",\n  \"phone\": \"+1234567890\",\n  \"reason\": \"Violation of terms\"\n}"
+							"raw": "{\n  \"user_id\": 1,\n  \"email\": \"nonee@none.com\",\n  \"phone\": \"9234567890\",\n  \"reason\": \"Violation of terms\"\n}"
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/ban",
@@ -1027,7 +1457,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"customer_id\": 1,\n  \"total\": 129.99,\n  \"order_date\": \"2024-03-20\",\n  \"delivery_date\": \"2024-03-25\",\n  \"status\": \"pending\"\n}"
+							"raw": ""
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/order",
@@ -1098,155 +1528,6 @@
 							"path": [
 								"api",
 								"order",
-								"1"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "OrderItem",
-			"item": [
-				{
-					"name": "Get All OrderItems",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:3000/api/orderitem",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"orderitem"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get OrderItem by ID",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:3000/api/orderitem/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"orderitem",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create OrderItem",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"order_id\": 1,\n  \"book_id\": 1,\n  \"quantity\": 2\n}"
-						},
-						"url": {
-							"raw": "http://localhost:3000/api/orderitem",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"orderitem"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update OrderItem",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"quantity\": 3\n}"
-						},
-						"url": {
-							"raw": "http://localhost:3000/api/orderitem/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"orderitem",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete OrderItem",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:3000/api/orderitem/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"orderitem",
 								"1"
 							]
 						}
@@ -1461,6 +1742,16 @@
 				{
 					"name": "Create CartItem",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzY5ODQ0NTQsImV4cCI6MTczNjk4ODA1NH0.1gGf6t8r9ko-QyY6HRZXPjpiOavf89yjep9cZYTw92Y",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -1474,7 +1765,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"item_id\": 1,\n  \"quantity\": 2,\n  \"customer_id\": 1\n}"
+							"raw": "{\n  \"item_id\": 1,\n  \"quantity\": 2\n}"
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/cartitem",
@@ -1749,6 +2040,16 @@
 				{
 					"name": "Create Contract",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZW1haWwiOiJub25lQG5vbmUuY29tIiwibmFtZSI6IkpvaG4iLCJzdXJuYW1lIjoiRG9lIiwiaWF0IjoxNzM2OTg1Njk1LCJleHAiOjE3MzY5ODkyOTV9.Bt-NQ_Pz5zpKdJS1ou04_H6izSsGfYWNQ0FYZxhAHZo",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -1762,7 +2063,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"order_id\": 1,\n  \"plan_id\": 1,\n  \"start_date\": \"2024-03-20\",\n  \"end_date\": \"2025-03-20\",\n  \"first_payment\": 100,\n  \"monthly_payment\": 50,\n  \"next_payment\": \"2024-04-20\",\n  \"total\": 600\n}"
+							"raw": "{\n  \"order_id\": 1,\n  \"plan_id\": 1,\n  \"start_date\": \"2024-03-20\",\n  \"first_payment\": 100,\n  \"monthly_payment\": 50,\n  \"next_payment\": \"2024-04-20\",\n  \"total\": 600\n}"
 						},
 						"url": {
 							"raw": "http://localhost:3000/api/contract",
@@ -1833,155 +2134,6 @@
 							"path": [
 								"api",
 								"contract",
-								"1"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Coupon",
-			"item": [
-				{
-					"name": "Get All Coupons",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:3000/api/coupon",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"coupon"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Get Coupon by ID",
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:3000/api/coupon/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"coupon",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Create Coupon",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"code\": \"SPRING2024\",\n  \"discount\": 20,\n  \"from\": \"2024-03-20\",\n  \"until\": \"2024-04-20\",\n  \"times_used\": 0,\n  \"is_active\": true\n}"
-						},
-						"url": {
-							"raw": "http://localhost:3000/api/coupon",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"coupon"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Update Coupon",
-					"request": {
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							},
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n  \"discount\": 25,\n  \"until\": \"2024-04-30\",\n  \"is_active\": true\n}"
-						},
-						"url": {
-							"raw": "http://localhost:3000/api/coupon/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"coupon",
-								"1"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Delete Coupon",
-					"request": {
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer YOUR_TOKEN_HERE"
-							}
-						],
-						"url": {
-							"raw": "http://localhost:3000/api/coupon/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"api",
-								"coupon",
 								"1"
 							]
 						}
