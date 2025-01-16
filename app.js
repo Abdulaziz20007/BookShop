@@ -6,7 +6,7 @@ const db = require("./models");
 const { requestLogging, errorLogging } = require("./helpers/express_winston");
 
 const PORT = config.get("port");
-const notFound = (req, res) => res.status(404).send("topilmadi");
+const notFound = (req, res) => res.status(404).send({ msg: "404 topilmadi" });
 
 const app = express();
 app.use(express.json());
@@ -21,7 +21,7 @@ app.use(errorLogging);
 async function start() {
   try {
     await db.sequelize.authenticate();
-    await db.sequelize.sync({ force: true });
+    await db.sequelize.sync({ alter: true });
     app.listen(PORT, () => {
       console.log(`server started at: http://localhost:${PORT}`);
     });

@@ -1,9 +1,21 @@
 const { errorHandler } = require("../helpers/error_handler");
-const { Book } = require("../models");
+const { Book, Author, Category, Image } = require("../models");
 
 const getAll = async (req, res) => {
   try {
-    const books = await Book.findAll();
+    const books = await Book.findAll({
+      include: [
+        { model: Author, attributes: { exclude: ["createdAt", "updatedAt"] } },
+        {
+          model: Category,
+          attributes: { exclude: ["createdAt", "updatedAt"] },
+        },
+        {
+          model: Image,
+          attributes: { exclude: ["createdAt", "updatedAt"] },
+        },
+      ],
+    });
     res.send(books);
   } catch (err) {
     errorHandler(err, res);
@@ -13,7 +25,15 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   try {
     const id = req.params.id;
-    const book = await Book.findByPk(id);
+    const book = await Book.findByPk(id, {
+      include: [
+        { model: Author, attributes: { exclude: ["createdAt", "updatedAt"] } },
+        {
+          model: Category,
+          attributes: { exclude: ["createdAt", "updatedAt"] },
+        },
+      ],
+    });
     if (!book) {
       return res.status(404).send({ msg: "Book topilmadi" });
     }
@@ -54,7 +74,15 @@ const create = async (req, res) => {
 const updateById = async (req, res) => {
   try {
     const id = req.params.id;
-    const book = await Book.findByPk(id);
+    const book = await Book.findByPk(id, {
+      include: [
+        { model: Author, attributes: { exclude: ["createdAt", "updatedAt"] } },
+        {
+          model: Category,
+          attributes: { exclude: ["createdAt", "updatedAt"] },
+        },
+      ],
+    });
     if (!book) {
       return res.status(404).send({ msg: "Book topilmadi" });
     }
@@ -83,7 +111,15 @@ const updateById = async (req, res) => {
       { where: { id } }
     );
 
-    const updatedBook = await Book.findByPk(id);
+    const updatedBook = await Book.findByPk(id, {
+      include: [
+        { model: Author, attributes: { exclude: ["createdAt", "updatedAt"] } },
+        {
+          model: Category,
+          attributes: { exclude: ["createdAt", "updatedAt"] },
+        },
+      ],
+    });
     res.send(updatedBook);
   } catch (err) {
     errorHandler(err, res);

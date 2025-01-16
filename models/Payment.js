@@ -21,10 +21,6 @@ const Payment = sequelize.define(
       type: DataTypes.DATE,
       defaultValue: DataTypes.NOW,
     },
-    payment_method: {
-      type: DataTypes.ENUM("cash", "card", "transfer"),
-      allowNull: false,
-    },
     payment_status: {
       type: DataTypes.ENUM("pending", "completed", "failed"),
       defaultValue: "pending",

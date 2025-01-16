@@ -7,7 +7,6 @@ const Book = require("./Book");
 const CartItem = require("./CartItem");
 const Category = require("./Category");
 const Contract = require("./Contract");
-const Coupon = require("./Coupon");
 const Customer = require("./Customer");
 const Image = require("./Image");
 const Order = require("./Order");
@@ -56,6 +55,39 @@ Review.belongsTo(Book, { foreignKey: "book_id" });
 Ban.belongsTo(Admin, { foreignKey: "admin_id" });
 Ban.belongsTo(Customer, { foreignKey: "user_id" });
 
+Order.belongsTo(Plan, { foreignKey: "plan_id" });
+
+CartItem.belongsTo(Book, {
+  foreignKey: "item_id",
+  targetKey: "id",
+});
+
+Book.hasMany(CartItem, {
+  foreignKey: "item_id",
+  sourceKey: "id",
+});
+
+Contract.belongsTo(Customer, { foreignKey: "customer_id" });
+Contract.belongsTo(Admin, { foreignKey: "admin_id" });
+
+Payment.belongsTo(Contract, { foreignKey: "contract_id" });
+
+Book.hasMany(OrderItem, { foreignKey: "book_id" });
+
+Admin.hasMany(Contract, { foreignKey: "admin_id" });
+Admin.hasMany(Ban, { foreignKey: "admin_id" });
+
+Customer.hasMany(Contract, { foreignKey: "customer_id" });
+Customer.hasMany(Ban, { foreignKey: "user_id" });
+
+Plan.hasMany(Contract, { foreignKey: "plan_id" });
+Plan.hasMany(Order, { foreignKey: "plan_id" });
+
+Image.belongsTo(Book, { foreignKey: "book_id" });
+
+Author.hasMany(Book, { foreignKey: "author_id" });
+
+Order.belongsTo(Customer, { foreignKey: "customer_id" });
 
 module.exports = {
   Admin,
@@ -65,7 +97,6 @@ module.exports = {
   CartItem,
   Category,
   Contract,
-  Coupon,
   Customer,
   Image,
   Order,

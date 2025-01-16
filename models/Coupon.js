@@ -4,7 +4,7 @@ const sequelize = require("../config/db");
 const Coupon = sequelize.define(
   "coupon",
   {
-    coupon_id: {
+    id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
@@ -15,18 +15,23 @@ const Coupon = sequelize.define(
       unique: true,
     },
     discount: {
+      type: DataTypes.DECIMAL(5, 2),
+      allowNull: false,
+    },
+    valid_from: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
+    valid_until: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    max_uses: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      defaultValue: 1,
     },
-    from: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    until: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    },
-    times_used: {
+    current_uses: {
       type: DataTypes.INTEGER,
       defaultValue: 0,
     },

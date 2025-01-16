@@ -10,7 +10,7 @@ const CartItem = sequelize.define(
       autoIncrement: true,
     },
     item_id: {
-      type: DataTypes.BIGINT,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     quantity: {

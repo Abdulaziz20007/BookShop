@@ -3,7 +3,9 @@ const { Category } = require("../models");
 
 const getAll = async (req, res) => {
   try {
-    const categories = await Category.findAll();
+    const categories = await Category.findAll({
+      include: [{ model: Category, attributes: { exclude: ["createdAt", "updatedAt"] } }],
+    });
     res.send(categories);
   } catch (err) {
     errorHandler(err, res);
@@ -13,7 +15,9 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
   try {
     const id = req.params.id;
-    const category = await Category.findByPk(id);
+    const category = await Category.findByPk(id, {
+      include: [{ model: Category, attributes: { exclude: ["createdAt", "updatedAt"] } }],
+    });
     if (!category) {
       return res.status(404).send({ msg: "Category topilmadi" });
     }
@@ -40,7 +44,9 @@ const create = async (req, res) => {
 const updateById = async (req, res) => {
   try {
     const id = req.params.id;
-    const category = await Category.findByPk(id);
+    const category = await Category.findByPk(id, {
+      include: [{ model: Category, attributes: { exclude: ["createdAt", "updatedAt"] } }],
+    });
     if (!category) {
       return res.status(404).send({ msg: "Category topilmadi" });
     }
@@ -61,7 +67,9 @@ const updateById = async (req, res) => {
 const deleteById = async (req, res) => {
   try {
     const id = req.params.id;
-    const category = await Category.findByPk(id);
+    const category = await Category.findByPk(id, {
+      include: [{ model: Category, attributes: { exclude: ["createdAt", "updatedAt"] } }],
+    });
     if (!category) {
       return res.status(404).send({ msg: "Category topilmadi" });
     }

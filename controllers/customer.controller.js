@@ -3,6 +3,9 @@ const { errorHandler } = require("../helpers/error_handler");
 const { Customer } = require("../models");
 const { customerValidation } = require("../validations/customer.validation");
 const jwtService = require("../services/jwt_service");
+const uuid = require("uuid");
+const mailService = require("../services/mail.service");
+const config = require("config");
 
 const getAll = async (req, res) => {
   try {
@@ -49,6 +52,9 @@ const create = async (req, res) => {
       passport_number,
       address,
     } = value;
+
+    const verification = uuid.v4();
+
     const customer = await Customer.create({
       name,
       surname,
@@ -59,13 +65,24 @@ const create = async (req, res) => {
       passport_seria,
       passport_number,
       address,
+      verification,
     });
 
     const newCustomer = await Customer.findByPk(customer.id, {
       attributes: {
-        exclude: ["password", "refresh_token", "createdAt", "updatedAt"],
+        exclude: [
+          "verification",
+          "password",
+          "refresh_token",
+          "createdAt",
+          "updatedAt",
+          "verification",
+        ],
       },
     });
+
+    await mailService.sendMailActivationCode(customer.email, verification);
+
     res.status(201).send({ customer: newCustomer });
   } catch (err) {
     errorHandler(err, res);
@@ -98,6 +115,11 @@ const updateById = async (req, res) => {
     if (!comparePassword(password, oldCustomer.password)) {
       return res.status(400).send({ msg: "Invalid password" });
     }
+    if (oldCustomer.email !== email) {
+      const verification = uuid.v4();
+      await Customer.update({ verification }, { where: { id } });
+      await mailService.sendMailActivationCode(email, verification);
+    }
     await Customer.update(
       {
         name,
@@ -129,7 +151,8 @@ const updateById = async (req, res) => {
 
 const changePassword = async (req, res) => {
   try {
-    const { id } = req.params;
+    const { id } = req.customer;
+
     const customer = await Customer.findByPk(id, {
       attributes: { exclude: ["refreshToken", "createdAt", "updatedAt"] },
     });
@@ -138,13 +161,13 @@ const changePassword = async (req, res) => {
     }
     const { oldPassword, newPassword } = req.body;
     if (!comparePassword(oldPassword, customer.password)) {
-      return res.status(400).send({ msg: "Invalid password" });
+      return res.status(400).send({ msg: "Parol noto'g'ri" });
     }
     await Customer.update(
       { password: hashPassword(newPassword) },
       { where: { id } }
     );
-    res.send({ msg: "Password changed successfully" });
+    res.send({ msg: "Parol o'zgartirildi" });
   } catch (err) {
     errorHandler(err, res);
   }
@@ -191,18 +214,20 @@ const login = async (req, res) => {
     if (!comparePassword(password, customer.password)) {
       return res.status(400).send({ msg: "Email yoki parol noto'g'ri" });
     }
+    if (customer.is_active == false) {
+      return res.status(404).send({ msg: "Customer aktiv emas" });
+    }
 
     const payload = {
       id: customer.id,
       email: customer.email,
       name: customer.name,
       surname: customer.surname,
-      is_active: customer.is_active,
     };
 
     const tokens = jwtService.generateTokens(payload);
     await Customer.update(
-      { refreshToken: tokens.refreshToken },
+      { refresh_token: tokens.refreshToken },
       { where: { id: customer.id } }
     );
 
@@ -226,7 +251,7 @@ const logout = async (req, res) => {
     if (!customer) {
       return res.status(401).send({ msg: "Noto'g'ri token" });
     }
-    await Customer.update({ refreshToken: "" }, { where: { refresh_token } });
+    await Customer.update({ refresh_token: "" }, { where: { refresh_token } });
     res.clearCookie("refreshToken");
     res.send({ msg: "Tizimdan chiqildi" });
   } catch (err) {
@@ -236,14 +261,17 @@ const logout = async (req, res) => {
 
 const refreshToken = async (req, res) => {
   try {
-    const refresh_token = req.customer.refreshToken;
+    const refresh_token = req.cookies.refreshToken;
     if (!refresh_token) {
       return res.status(401).send({ msg: "Token topilmadi" });
     }
 
-    const customer = await Customer.findOne({ where: { refreshToken } });
+    const customer = await Customer.findOne({ where: { refresh_token } });
     if (!customer) {
       return res.status(404).send({ msg: "Customer topilmadi" });
+    }
+    if (customer.is_active == false) {
+      return res.status(404).send({ msg: "Customer aktiv emas" });
     }
 
     const tokens = jwtService.generateTokens({
@@ -254,7 +282,7 @@ const refreshToken = async (req, res) => {
     });
 
     await Customer.update(
-      { refreshToken: tokens.refreshToken },
+      { refresh_token: tokens.refreshToken },
       { where: { id: customer.id } }
     );
 
@@ -264,6 +292,25 @@ const refreshToken = async (req, res) => {
     });
 
     res.send({ accessToken: tokens.accessToken });
+  } catch (err) {
+    errorHandler(err, res);
+  }
+};
+
+const verify = async (req, res) => {
+  try {
+    const verification = req.params.id;
+    const customer = await Customer.findOne({ where: { verification } });
+
+    if (!customer) {
+      return res.status(404).send({ msg: "Customer topilmadi" });
+    }
+
+    if (customer.is_active == true) {
+      return res.status(400).send({ msg: "Customer aktiv" });
+    }
+    await Customer.update({ is_active: true }, { where: { id: customer.id } });
+    res.send({ msg: "Customer aktivlandi" });
   } catch (err) {
     errorHandler(err, res);
   }
@@ -280,4 +327,5 @@ module.exports = {
   refreshToken,
   changePassword,
   getMyCartItems,
+  verify,
 };

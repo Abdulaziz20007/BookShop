@@ -1,6 +1,7 @@
 const Customer = require("../models/Customer");
 const Ban = require("../models/Ban");
 const jwtService = require("../services/jwt_service");
+const {errorHandler} = require("../helpers/error_handler");
 
 const customerMiddleware = async (req, res, next) => {
   try {
@@ -20,27 +21,16 @@ const customerMiddleware = async (req, res, next) => {
       return res.status(401).send({ msg: "Token noto'g'ri" });
     }
 
-    const ban = await Ban.findOne({
-      where: {
-        user_id: customer.id,
-      },
-    });
-
-    if (ban) {
-      return res.status(403).send({
-        msg: "Akkount bloklangan",
-        reason: ban.reason,
-      });
+    if (customer.expired_at < new Date()) {
+      return res.status(401).send({ msg: "Token eskirgan" });
     }
 
-    if (!customer.is_active) {
-      return res.status(403).send({ msg: "Customer faol emas" });
-    }
+    customer.refreshToken = req.cookies.refreshToken;
 
     req.customer = customer;
     next();
   } catch (err) {
-    return res.status(500).send({ msg: "Ichki server xatosi" });
+    errorHandler(err, res);
   }
 };
 
@@ -51,7 +41,7 @@ const customerSelfMiddleware = async (req, res, next) => {
       return res.status(403).send({ msg: "Ruxsat yo'q" });
     }
   } catch (err) {
-    return res.status(500).send({ msg: "Ichki server xatosi" });
+    errorHandler(err, res);
   }
 };
 

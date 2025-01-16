@@ -9,6 +9,14 @@ const Contract = sequelize.define(
       primaryKey: true,
       autoIncrement: true,
     },
+    admin_id: {
+      type: DataTypes.BIGINT,
+      allowNull: false,
+    },
+    customer_id: {
+      type: DataTypes.BIGINT,
+      allowNull: false,
+    },
     order_id: {
       type: DataTypes.BIGINT,
       allowNull: false,
@@ -33,11 +41,19 @@ const Contract = sequelize.define(
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },
-    next_payment: {
+    next_payment_date: {
       type: DataTypes.DATE,
       allowNull: false,
     },
+    next_payment: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+    },
     total: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+    },
+    remaining_amount: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
     },

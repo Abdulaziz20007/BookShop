@@ -5,7 +5,6 @@ exports.paymentValidation = (data) => {
     contract_id: Joi.number().required(),
     amount: Joi.number().precision(2).required(),
     payment_date: Joi.date().default(Date.now),
-    payment_method: Joi.string().valid("cash", "card", "transfer").required(),
     payment_status: Joi.string()
       .valid("pending", "completed", "failed")
       .default("pending"),

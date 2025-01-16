@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { customerMiddleware } = require("../middlewares/customer.middleware");
 
 const {
   getAll,
@@ -10,8 +11,8 @@ const {
 
 router.get("/", getAll);
 router.get("/:id", getById);
-router.post("/", create);
-router.put("/:id", updateById);
-router.delete("/:id", deleteById);
+router.post("/", customerMiddleware, create);
+router.put("/:id", customerMiddleware, updateById);
+router.delete("/:id", customerMiddleware, deleteById);
 
 module.exports = router;

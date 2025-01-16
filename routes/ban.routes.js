@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const adminMiddleware = require("../middlewares/admin.middleware");
+const { adminMiddleware } = require("../middlewares/admin.middleware");
 
 const {
   getAll,

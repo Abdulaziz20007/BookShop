@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const customerMiddleware = require("../middlewares/customer.middleware");
+const {customerMiddleware} = require("../middlewares/customer.middleware");
 
 const {
   getAll,

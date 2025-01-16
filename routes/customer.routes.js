@@ -1,6 +1,9 @@
 const router = require("express").Router();
-const customerMiddleware = require("../middlewares/customer.middleware");
-
+const {
+  customerMiddleware,
+  customerSelfMiddleware,
+} = require("../middlewares/customer.middleware");
+const { adminMiddleware } = require("../middlewares/admin.middleware");
 const {
   getAll,
   getById,
@@ -12,21 +15,23 @@ const {
   refreshToken,
   changePassword,
   getMyCartItems,
+  verify,
 } = require("../controllers/customer.controller");
 
 router.post("/login", login);
-router.post("/", create);
 router.post("/refresh", refreshToken);
+router.post("/", create);
 
-router.use(customerMiddleware);
+router.get("/verify/:id", verify);
 
-router.post("/logout", logout);
-router.get("/cart/items", getMyCartItems);
-router.put("/change-password", changePassword);
+router.post("/logout", customerMiddleware, logout);
+router.get("/cart", customerMiddleware, getMyCartItems);
+router.put("/change", customerMiddleware, changePassword);
 
-router.get("/", getAll);
-router.get("/:id", getById);
-router.put("/:id", updateById);
-router.delete("/:id", deleteById);
+router.get("/", adminMiddleware, getAll);
+
+router.get("/:id", customerMiddleware, customerSelfMiddleware, getById);
+router.put("/:id", customerMiddleware, customerSelfMiddleware, updateById);
+router.delete("/:id", customerMiddleware, customerSelfMiddleware, deleteById);
 
 module.exports = router;

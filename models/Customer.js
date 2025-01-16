@@ -46,6 +46,10 @@ const Customer = sequelize.define(
       type: DataTypes.STRING,
       defaultValue: "",
     },
+    is_active: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
     verification: {
       type: DataTypes.STRING,
       defaultValue: "",

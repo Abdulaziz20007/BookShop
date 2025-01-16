@@ -3,6 +3,7 @@ const { errorHandler } = require("../helpers/error_handler");
 const { Admin } = require("../models");
 const { adminValidation } = require("../validations/admin.validation");
 const jwtService = require("../services/jwt_service");
+const config = require("config");
 
 const getAll = async (req, res) => {
   try {
@@ -11,6 +12,7 @@ const getAll = async (req, res) => {
         exclude: ["password", "refresh_token", "createdAt", "updatedAt"],
       },
     });
+
     res.send(admins);
   } catch (err) {
     errorHandler(err, res);
@@ -39,7 +41,6 @@ const create = async (req, res) => {
     }
 
     const { name, surname, email, phone, password } = value;
-    console.log(name, surname, email, phone, password);
     const admin = await Admin.create({
       name,
       surname,
@@ -63,7 +64,6 @@ const updateById = async (req, res) => {
   try {
     const id = req.params.id;
     const oldAdmin = await Admin.findByPk(id);
-    console.log(oldAdmin);
 
     if (!oldAdmin) {
       return res.status(404).send({ msg: "Admin topilmadi" });
@@ -103,7 +103,7 @@ const updateById = async (req, res) => {
 
 const changePassword = async (req, res) => {
   try {
-    const { id } = req.params;
+    const { id } = req.admin;
     const admin = await Admin.findByPk(id, {
       attributes: { exclude: ["refreshToken", "createdAt", "updatedAt"] },
     });
@@ -162,13 +162,13 @@ const login = async (req, res) => {
 
     const tokens = jwtService.generateTokens(payload);
     await Admin.update(
-      { refreshToken: tokens.refreshToken },
+      { refresh_token: tokens.refreshToken },
       { where: { id: admin.id } }
     );
 
     res.cookie("refreshToken", tokens.refreshToken, {
       httpOnly: true,
-      maxAge: config.cookie_time,
+      maxAge: config.get("cookie_time"),
     });
     res.send({ accessToken: tokens.accessToken });
   } catch (err) {
@@ -178,7 +178,7 @@ const login = async (req, res) => {
 
 const logout = async (req, res) => {
   try {
-    const refresh_token = req.admin.refreshToken;
+    const refresh_token = req.cookies.refreshToken;
     if (!refresh_token) {
       return res.status(401).send({ msg: "Token topilmadi" });
     }
@@ -186,7 +186,7 @@ const logout = async (req, res) => {
     if (!admin) {
       return res.status(401).send({ msg: "Noto'g'ri token" });
     }
-    await Admin.update({ refreshToken: "" }, { where: { refresh_token } });
+    await Admin.update({ refresh_token: "" }, { where: { refresh_token } });
     res.clearCookie("refreshToken");
     res.send({ msg: "Tizimdan chiqildi" });
   } catch (err) {
@@ -196,12 +196,12 @@ const logout = async (req, res) => {
 
 const refreshToken = async (req, res) => {
   try {
-    const refresh_token = req.admin.refreshToken;
+    const refresh_token = req.cookies.refreshToken;
     if (!refresh_token) {
       return res.status(401).send({ msg: "Token topilmadi" });
     }
 
-    const admin = await Admin.findOne({ where: { refreshToken } });
+    const admin = await Admin.findOne({ where: { refresh_token } });
     if (!admin) {
       return res.status(404).send({ msg: "Admin topilmadi" });
     }
@@ -214,13 +214,13 @@ const refreshToken = async (req, res) => {
     });
 
     await Admin.update(
-      { refreshToken: tokens.refreshToken },
+      { refresh_token: tokens.refreshToken },
       { where: { id: admin.id } }
     );
 
     res.cookie("refreshToken", tokens.refreshToken, {
       httpOnly: true,
-      maxAge: config.cookie_time,
+      maxAge: config.get("cookie_time"),
     });
 
     res.send({ accessToken: tokens.accessToken });
