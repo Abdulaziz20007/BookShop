@@ -19,7 +19,7 @@ const getSalesReport = async (req, res) => {
       });
     }
 
-    const orders = await Order.findAll({
+    const orders = await Contract.findAll({
       where: {
         createdAt: {
           [Symbol.for("between")]: [new Date(start_date), new Date(end_date)],
@@ -27,40 +27,32 @@ const getSalesReport = async (req, res) => {
       },
       include: [
         {
-          model: Customer,
-          attributes: ["name", "surname", "phone"],
-        },
-        {
-          model: OrderItem,
-          attributes: ["quantity"],
+          model: Order,
           include: [
             {
-              model: Book,
-              attributes: ["title", "price"],
+              model: Customer,
+              attributes: ["name", "surname", "phone"],
+            },
+            {
+              model: OrderItem,
+              attributes: ["quantity"],
+              include: [
+                {
+                  model: Book,
+                  attributes: ["title", "price"],
+                },
+              ],
             },
           ],
         },
       ],
     });
 
-    let data = [];
+    if (!orders) {
+      return res.status(404).send({ msg: "Contractlar topilmadi" });
+    }
 
-    const result = orders.forEach(
-      (order) =>
-        (data += {
-          mijoz: `${order.customer.surname} ${order.customer.name}`,
-          telefon: order.customer.phone,
-          kitoblar: order.orderItems.map((item) => ({
-            nomi: item.book.title,
-            narxi: item.book.price,
-            soni: item.quantity,
-          })),
-          jami: order.total,
-          sana: order.createdAt,
-        })
-    );
-
-    res.send(result);
+    res.send(orders);
   } catch (err) {
     errorHandler(err, res);
   }
@@ -101,23 +93,38 @@ const getOverduePayments = async (req, res) => {
       ],
     });
 
-    const result = overdueContracts.map((contract) => {
-      const kunlarSoni = Math.floor(
-        (today - new Date(contract.next_payment_date)) / (1000 * 60 * 60 * 24)
-      );
+    if (!overdueContracts) {
+      return res.status(404).send({ msg: "Kechikkan to'lovlar topilmadi" });
+    }
 
-      return {
-        mijoz: `${contract.customer.surname} ${contract.customer.name}`,
-        kitoblar: contract.order.orderItems
-          .map((item) => item.book.title)
-          .join(", "),
-        shartnoma_raqami: contract.id,
-        tolov_summasi: contract.next_payment,
-        kechikkan_kunlar: kunlarSoni,
-      };
-    });
+    // const result = overdueContracts
+    //   .map((contract) => {
+    //     if (
+    //       !contract.customer ||
+    //       !contract.order ||
+    //       !contract.order.orderItems
+    //     ) {
+    //       return null;
+    //     }
 
-    res.send(result);
+    //     const kunlarSoni = Math.floor(
+    //       (today - new Date(contract.next_payment_date)) / (1000 * 60 * 60 * 24)
+    //     );
+
+    //     return {
+    //       mijoz: `${contract.customer.surname} ${contract.customer.name}`,
+    //       kitoblar: contract.order.orderItems
+    //         .filter((item) => item && item.book)
+    //         .map((item) => item.book.title)
+    //         .join(", "),
+    //       shartnoma_raqami: contract.id,
+    //       tolov_summasi: contract.next_payment,
+    //       kechikkan_kunlar: kunlarSoni,
+    //     };
+    //   })
+    //   .filter(Boolean);
+
+    res.send(overdueContracts);
   } catch (err) {
     errorHandler(err, res);
   }

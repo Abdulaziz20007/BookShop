@@ -17521,3 +17521,1180 @@
   level: 'info',
   message: 'GET /api/admin/overdues 400 4ms'
 }
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'e44555cc-a700-4add-a8ba-0f3544e7e48d',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '106',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 49
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 49ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '5d8db34e-1127-4832-b694-28a79f3f3b32',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 79
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 79ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '49e32e76-a31a-4726-978b-cfffe8babf7c',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 4ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '7b6140f6-2c92-4272-8a2d-295b8bf23ecc',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 4ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'b44a8ac1-4d33-4ccc-a39c-c37c28a0eb39',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 3
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 3ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'b75e5f4c-2704-4c1f-9f2c-1cae78c39a2f',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 4ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '48b00859-dd2c-4239-87e1-c2d6f2d20c12',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 4ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'f1e3521c-ec61-47e7-9a43-daa9ca76e49b',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 50
+  },
+  level: 'info',
+  message: 'POST /api/payment 400 50ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '4d15fd8a-f4ce-4972-8b93-655373f97926',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 21
+  },
+  level: 'info',
+  message: 'POST /api/payment 400 21ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'c5ac6c7d-af91-4148-816f-569bc390d5f2',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 18
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 18ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '4e10f649-c41a-46fd-8761-0c987daca34f',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 98
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 98ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '62e24df8-fefe-42a9-98b3-8d5f6234c9de',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '72',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 36
+  },
+  level: 'info',
+  message: 'POST /api/contract 400 36ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'b59cf1c3-2663-4a69-9c19-a2870b02b2b1',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 22
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 22ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'd0cd26e3-435d-439b-9663-fbcba46eac7b',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 51
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 51ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'e279af95-a869-40a7-9520-cd7891598949',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 4ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '6cb13bdb-0c5d-4548-a324-5ce1b0b19de3',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 4ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '15b91c50-52c4-41b2-9334-ae46d1fb26ea',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 4
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 4ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'bc52234f-4d7f-4267-a24a-e96eb9a2d089',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 3
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 3ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'e5bd0de8-a5fb-49ac-8b4f-649512612b89',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 17
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 17ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '8c5e7708-6c09-4cbd-b230-4aaae6dd925b',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 149
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 149ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'f05b0866-3c03-41b9-b3e2-c1cebee1a859',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 52
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 52ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'ff7a40db-5108-4f55-a1ca-902c20a46513',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 47
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 47ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '043d7d4e-1ea3-40c2-aa3d-680ea2c16a99',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 56
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 56ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '9a0d8d77-b2c7-4bbe-8d0f-0361181aa7d3',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 86
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 86ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '7f0a975c-6c27-4fde-ac0b-b2795c7ea1a8',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 140
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 140ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '25d3b938-0e5e-4c20-a5e7-fb6358b8bbb9',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 59
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 59ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'af8d9719-6542-460f-a5ea-751daf671ea8',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 53
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 53ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '63bc7719-9ffa-4c49-b4e4-f2d845d17f19',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 23
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 23ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '758ea512-270b-4558-85b0-d971a0bbce1b',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 43
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 43ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/admin/sales',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '349102fe-a49f-4121-aaf1-a6e88cedffe9',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '63',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/admin/sales',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 67
+  },
+  level: 'info',
+  message: 'GET /api/admin/sales 400 67ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/admin/sales',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'ce904f10-a930-434d-99b5-558e67846143',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '63',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/admin/sales',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 17
+  },
+  level: 'info',
+  message: 'GET /api/admin/sales 400 17ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/admin/sales',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'd7351a1f-d41b-4bfa-88c1-cf68c69cfd2e',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '63',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/admin/sales',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 5
+  },
+  level: 'info',
+  message: 'GET /api/admin/sales 400 5ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/admin/sales',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'c1fa4397-484c-4215-b890-5131d2600fad',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '63',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/admin/sales',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 80
+  },
+  level: 'info',
+  message: 'GET /api/admin/sales 200 80ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/admin/sales',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'f5dd65b7-00a9-4d66-b904-2c1309314a06',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '63',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/admin/sales',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 17
+  },
+  level: 'info',
+  message: 'GET /api/admin/sales 200 17ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/admin/overdues',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '0453ead3-ace4-4cfa-bfec-37028f2f86d5',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/admin/overdues',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 12
+  },
+  level: 'info',
+  message: 'GET /api/admin/overdues 200 12ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/admin/overdues',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '137e8258-8c38-4d61-bd07-0052bb84d4e6',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/admin/overdues',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 67
+  },
+  level: 'info',
+  message: 'GET /api/admin/overdues 200 67ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '8f47f2b6-4e7c-46ef-a910-f7e14b10f681',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 48
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 48ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/contract',
+      headers: {
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '2f51b31f-66df-4948-9fe6-8f585f8840d8',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/contract',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 89
+  },
+  level: 'info',
+  message: 'GET /api/contract 200 89ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/admin/sales',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'ce650bbf-f251-434e-8773-d351464d3f44',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '63',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'GET',
+      httpVersion: '1.1',
+      originalUrl: '/api/admin/sales',
+      query: {}
+    },
+    res: { statusCode: 200 },
+    responseTime: 96
+  },
+  level: 'info',
+  message: 'GET /api/admin/sales 200 96ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'f613e042-e718-4f89-8317-f3328c5aa85a',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '72',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 45
+  },
+  level: 'info',
+  message: 'POST /api/payment 400 45ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'b7bb67ea-bc21-4d59-b970-66e8afbca4a0',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 12
+  },
+  level: 'info',
+  message: 'POST /api/payment 400 12ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'e423e1f3-f749-4ac4-90ed-010fe8f9c083',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 17
+  },
+  level: 'info',
+  message: 'POST /api/payment 400 17ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': '7be490ab-25ce-4223-9bf0-8dc5c1d53ab9',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 18
+  },
+  level: 'info',
+  message: 'POST /api/payment 400 18ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'c39c924d-78cb-4270-8db5-54b78b911124',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 400 },
+    responseTime: 16
+  },
+  level: 'info',
+  message: 'POST /api/payment 400 16ms'
+}
+{
+  meta: {
+    req: {
+      url: '/api/payment',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzAyMzg1Nn0.h3GeQULHkgXdsoAmdYLrS4G4-6iSsUm_WZXaGwIA1CY',
+        'user-agent': 'PostmanRuntime/7.43.0',
+        accept: '*/*',
+        'postman-token': 'f4879f9d-2a71-435f-a153-261696e2a1dc',
+        host: 'localhost:3000',
+        'accept-encoding': 'gzip, deflate, br',
+        connection: 'keep-alive',
+        'content-length': '73',
+        cookie: 'refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6Im5vbmVAbm9uZS5jb20iLCJuYW1lIjoiSm9obiIsInN1cm5hbWUiOiJEb2UiLCJpYXQiOjE3MzcwMjAyNTYsImV4cCI6MTczNzEwNjY1Nn0.CXhoxmzsKsyMXX-siD9EiTpwZ9IN30h-KfA2t2gYuP4'
+      },
+      method: 'POST',
+      httpVersion: '1.1',
+      originalUrl: '/api/payment',
+      query: {}
+    },
+    res: { statusCode: 201 },
+    responseTime: 17
+  },
+  level: 'info',
+  message: 'POST /api/payment 201 17ms'
+}

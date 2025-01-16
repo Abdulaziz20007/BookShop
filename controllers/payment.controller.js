@@ -1,5 +1,6 @@
 const { errorHandler } = require("../helpers/error_handler");
 const { Payment, Contract } = require("../models");
+const { nextMonth } = require("../helpers/dates_helper");
 
 const getAll = async (req, res) => {
   try {
@@ -36,7 +37,8 @@ const getById = async (req, res) => {
 const create = async (req, res) => {
   try {
     const payment_date = new Date();
-    const { contract_id, amount, payment_method, payment_status } = req.body;
+    const payment_status = "completed";
+    const { contract_id, amount, payment_method } = req.body;
     const payment = await Payment.create(
       {
         contract_id,
@@ -52,7 +54,31 @@ const create = async (req, res) => {
         },
       }
     );
-    
+
+    const contract = await Contract.findByPk(contract_id);
+    if (!contract) {
+      return res.status(404).send({ msg: "Contract topilmadi" });
+    }
+
+    const nextPaymentDate = nextMonth(payment_date);
+
+    const contractAmount = Number(contract.next_payment);
+    const paymentAmount = Number(amount);
+    const remainingAmount = Number(contract.remaining_amount) - paymentAmount;
+    const nextPayment =
+      Number(contract.monthly_payment) -
+      paymentAmount / contract.monthly_payment;
+    console.log(contract.remaining_amount, paymentAmount);
+
+    await Contract.update(
+      {
+        next_payment_date: nextPaymentDate,
+        next_payment: nextPayment,
+        remaining_amount: remainingAmount,
+      },
+      { where: { id: contract.id } }
+    );
+
     res.status(201).send(payment);
   } catch (err) {
     errorHandler(err, res);

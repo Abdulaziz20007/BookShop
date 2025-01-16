@@ -28,8 +28,8 @@ const getById = async (req, res) => {
         exclude: ["password", "refresh_token", "createdAt", "updatedAt"],
       },
     });
-    if(!customer) {
-      return res.status(404).send({msg: "Customer topilmadi"})
+    if (!customer) {
+      return res.status(404).send({ msg: "Customer topilmadi" });
     }
     res.send(customer);
   } catch (err) {
